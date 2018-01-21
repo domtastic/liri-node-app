@@ -1,19 +1,29 @@
 let arrUserInput = process.argv;
 let command = arrUserInput[2];
 const fs = require("fs");
+const twitter = require("twitter");
+const keys = require("./keys.js");
+var request = require("request");
+console.log(keys);
+var Spotify = require("node-spotify-api");
+let movieName = "";
 
 if (command === "my-tweets") {
+  getTwitter();
+} else if (command === "spotify-this-song") {
+  getSpotify();
+} else if (command === "movie-this") {
+  // __________ MOVIE _________________
+  getMovies();
+} else if (command === "do-what-it-says") {
+  // __________ do-what-it-says _________________
+}
+
+function getTwitter() {
   // ____ TWITTER TWEETS_______
-  const twitter = require("twitter");
   // ------ link to key.js instead ????? LOADING, BUT NOT WORKING ??????
-  // let domTwitterKeys = require("./keys.js");
-  // let client = new Twitter(domTwitterKeys);
-  let client = new twitter({
-    consumer_key: "etx6VdK6tiTBGtATzYcGcwog0",
-    consumer_secret: "KGnLrF0qOcrtXqasFUznS0BrpOw5cFUXviIZ5UPxNnunyyIOUE",
-    access_token_key: "954843821078069248-n2pNq374LHkVemZbTC4V7jOuIrQKHOL",
-    access_token_secret: "cuIZBW5nq5q11qKQnmrI91eWsXm50tCZVdwzn18b4ObPJ"
-  });
+  let client = new twitter(keys.twitterKeys);
+  // console.log(client)
   var params = {
     screen_name: "denverdomtastic",
     count: 20
@@ -21,39 +31,92 @@ if (command === "my-tweets") {
   // something is not right.... GETting huge object response
   client.get("statuses/user_timeline", params, (error, tweets, response) => {
     if (!error) {
-      console.log(tweets);
-      fs.appendFile("log.txt", tweets, err => {
-        if (err) throw err;
-        console.log("The tweets have been saved!");
-      });
+      for (var i = 0; i < tweets.length; i++) {
+        console.log("==========================");
+        console.log(tweets[i].created_at);
+        console.log(tweets[i].text);
+        console.log(tweets[i].user.name);
+        fs.appendFile("log.txt", tweets[i].text, err => {
+          if (err) throw err;
+          console.log("The tweets have been saved!");
+        });
+      }
     } else {
       console.log(err);
     }
   });
-} else if (command === "spotify-this-song") {
+}
+
+function getSpotify() {
   // __________ SPOTIFY _________________
   // take the User input array and create a string from everything after the 2nd index
-  let song;
+  const spotify = new Spotify(keys.spotify);
+  var userSong = "";
   for (let i = 3; i < arrUserInput.length; i++) {
-    song += arrUserInput[i];
+    if (userSong === "") {
+      userSong += arrUserInput[i];
+    } else {
+      userSong += " " + arrUserInput[i];
+    }
   }
-  console.log("song: " + song);
-  let spotify = require("node-spotify-api");
-
-  let spotifyCLient = new spotify({
-    id: "12ff9337b04a481a9f1ef068a81347c5",
-    secret: "7ec80c9360ed4bc694f553f8ca7ec599"
-  });
-
-  spotifyClient.search({ type: "track", query: song }, function(err, data) {
+  console.log("userSong: " + userSong);
+  spotify.search({ type: "track", query: userSong }, (err, data) => {
     if (err) {
       return console.log("Error occurred: " + err);
+    } else {
+      for (var i = 0; i < 3; i++) {
+        console.log("==============================");
+        let output = `Artist: ${data.tracks.items[i].artists[0].name}
+    Name: ${data.tracks.items[i].name}
+    Link: ${data.tracks.items[i].external_urls.spotify}
+    Album: ${data.tracks.items[i].album.name}
+    `;
+        console.log(output);
+        fs.appendFile("log.txt", output, err => {
+          if (err) throw err;
+          console.log("The tweets have been saved!");
+        });
+        // console.log("Artist: " + data.tracks.items[i].artists[0].name);
+        // console.log("Name: " + data.tracks.items[i].name);
+        // console.log("Link: " + data.tracks.items[i].external_urls.spotify);
+        // console.log("Album: " + data.tracks.items[i].album.name);
+      }
     }
-
-    console.log(data);
   });
-} else if (command === "movie-this") {
-  // __________ MOVIE _________________
-} else if (command === "do-what-it-says") {
-  // __________ do-what-it-says _________________
+}
+
+function getMovies() {
+  if (arrUserInput.length == 3) {
+    movieName = "Mr. Nobody";
+    omdbInfo();
+  } else {
+    for (let i = 3; i < arrUserInput.length; i++) {
+      if (movieName === "") {
+        movieName += arrUserInput[i];
+      } else {
+        movieName += " " + arrUserInput[i];
+      }
+    }
+    omdbInfo();
+  }
+}
+
+function omdbInfo() {
+  var queryUrl =
+    "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+  request(queryUrl, (error, response, body) => {
+    console.log("========================");
+    // console.log("Body:", body); // Print the HTML for the Google homepage.
+    console.log(`Title: ${JSON.parse(body).Title}`);
+    console.log(`Year: ${JSON.parse(body).Year}`);
+    console.log(`IMDB Rating: ${JSON.parse(body).imdbRating}`);
+    // how do you do this again?
+    // console.log(
+    //   "Rotten Tomatoes: " + JSON.parse(body).Ratings.Source["Rotten Tomatoes"]
+    // );
+    console.log(`Country: ${JSON.parse(body).Country}`);
+    console.log(`Language: ${JSON.parse(body).Language}`);
+    console.log(`Plot: ${JSON.parse(body).Plot}`);
+    console.log(`Actors: ${JSON.parse(body).Actors}`);
+  });
 }
