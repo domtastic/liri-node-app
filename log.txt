@@ -1,1 +1,150 @@
-[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object][object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object][object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object][object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]Can't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWyCan't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWyCan't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWy
+[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object][object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object][object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object][object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]Can't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWyCan't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWyCan't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWyCan't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWyArtist: Portugal. The Man
+    Name: Feel It Still
+    Link: https://open.spotify.com/track/6QgjcU0zLnzq5OrUoSZ3OK
+    Album: Woodstock
+    Artist: Portugal. The Man
+    Name: Feel It Still - Gryffin Remix
+    Link: https://open.spotify.com/track/4yeWP0EabOteKT2MzPyeJ8
+    Album: Feel It Still (Gryffin Remix)
+    Artist: Portugal. The Man
+    Name: Feel It Still - ZHU Remix
+    Link: https://open.spotify.com/track/2Nv52rWLPoRebtWMQ362w6
+    Album: Feel It Still (ZHU Remix)
+    Title: The Avengers
+    Year: 2012
+    IMDB Rating: 8.1
+    // how do you do this again?
+    // console.log(
+    //   "Rotten Tomatoes: " + JSON.parse(body).Ratings.Source["Rotten Tomatoes"]
+    Country: USA
+    Language: English, Russian, Hindi
+    Plot: Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+    Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris HemsworthArtist: Portugal. The Man
+    Name: Feel It Still - Gryffin Remix
+    Link: https://open.spotify.com/track/4yeWP0EabOteKT2MzPyeJ8
+    Album: Feel It Still (Gryffin Remix)
+    Artist: Portugal. The Man
+    Name: Feel It Still - ZHU Remix
+    Link: https://open.spotify.com/track/2Nv52rWLPoRebtWMQ362w6
+    Album: Feel It Still (ZHU Remix)
+    Artist: Portugal. The Man
+    Name: Feel It Still
+    Link: https://open.spotify.com/track/6QgjcU0zLnzq5OrUoSZ3OK
+    Album: Woodstock
+    Artist: Backstreet Boys
+    Name: I Want It That Way
+    Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+    Album: The Hits--Chapter One
+    Artist: Backstreet Boys
+    Name: I Want It That Way
+    Link: https://open.spotify.com/track/68y6OIiE1nDdI1MLQdJNh8
+    Album: The Essential Backstreet Boys
+    Artist: Backstreet Boys
+    Name: I Want It That Way
+    Link: https://open.spotify.com/track/47BBI51FKFwOMlIiX6m8ya
+    Album: Millennium
+    Title: The Avengers
+    Year: 2012
+    IMDB Rating: 8.1
+    // how do you do this again?
+    // console.log(
+    //   "Rotten Tomatoes: " + JSON.parse(body).Ratings.Source["Rotten Tomatoes"]
+    Country: USA
+    Language: English, Russian, Hindi
+    Plot: Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+    Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris HemsworthTitle: The Pianist
+    Year: 2002
+    IMDB Rating: 8.5
+    Country: France, Poland, Germany, UK, USA
+    Language: English, German, Russian
+    Plot: A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.
+    Actors: Adrien Brody, Emilia Fox, Michal Zebrowski, Ed StoppardTitle: Super Troopers
+    Year: 2001
+    IMDB Rating: 7.1
+    Rotten Tomatoes: 48/100
+    Country: USA
+    Language: English, German, French
+    Plot: Five Vermont state troopers, avid pranksters with a knack for screwing up, try to save their jobs and out-do the local police department by solving a crime.
+    Actors: André Vippolis, Joey Kern, Geoffrey Arend, Erik StolhanskeTitle: The Pianist
+    Year: 2002
+    IMDB Rating: 8.5
+    Rotten Tomatoes: 85/100
+    Country: France, Poland, Germany, UK, USA
+    Language: English, German, Russian
+    Plot: A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.
+    Actors: Adrien Brody, Emilia Fox, Michal Zebrowski, Ed StoppardTitle: The Pianist
+    Year: 2002
+    IMDB Rating: 8.5
+    Rotten Tomatoes: 96%
+    Country: France, Poland, Germany, UK, USA
+    Language: English, German, Russian
+    Plot: A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.
+    Actors: Adrien Brody, Emilia Fox, Michal Zebrowski, Ed StoppardTitle: The Pianist
+    Year: 2002
+    IMDB Rating: 8.5
+    Rotten Tomatoes: 96%
+    Country: France, Poland, Germany, UK, USA
+    Language: English, German, Russian
+    Plot: A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.
+    Actors: Adrien Brody, Emilia Fox, Michal Zebrowski, Ed StoppardTitle: Super Troopers
+    Year: 2001
+    IMDB Rating: 7.1
+    Rotten Tomatoes: 35%
+    Country: USA
+    Language: English, German, French
+    Plot: Five Vermont state troopers, avid pranksters with a knack for screwing up, try to save their jobs and out-do the local police department by solving a crime.
+    Actors: André Vippolis, Joey Kern, Geoffrey Arend, Erik StolhanskeTitle: Super Troopers
+    Year: 2001
+    IMDB Rating: 7.1
+    Rotten Tomatoes: 35%
+    Country: USA
+    Language: English, German, French
+    Plot: Five Vermont state troopers, avid pranksters with a knack for screwing up, try to save their jobs and out-do the local police department by solving a crime.
+    Actors: André Vippolis, Joey Kern, Geoffrey Arend, Erik StolhanskeTitle: Super Troopers
+    Year: 2001
+    IMDB Rating: 7.1
+    Rotten Tomatoes: 35%
+    Country: USA
+    Language: English, German, French
+    Plot: Five Vermont state troopers, avid pranksters with a knack for screwing up, try to save their jobs and out-do the local police department by solving a crime.
+    Actors: André Vippolis, Joey Kern, Geoffrey Arend, Erik StolhanskeTitle: The Pianist
+    Year: 2002
+    IMDB Rating: 8.5
+    Rotten Tomatoes: 96%
+    Country: France, Poland, Germany, UK, USA
+    Language: English, German, Russian
+    Plot: A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.
+    Actors: Adrien Brody, Emilia Fox, Michal Zebrowski, Ed StoppardTitle: The Avengers
+    Year: 2012
+    IMDB Rating: 8.1
+    Rotten Tomatoes: 92%
+    Country: USA
+    Language: English, Russian, Hindi
+    Plot: Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+    Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris HemsworthTitle: The Avengers
+    Year: 2012
+    IMDB Rating: 8.1
+    Rotten Tomatoes: 92%
+    Country: USA
+    Language: English, Russian, Hindi
+    Plot: Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+    Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris HemsworthTitle: The Pianist
+    Year: 2002
+    IMDB Rating: 8.5
+    Rotten Tomatoes: 96%
+    Country: France, Poland, Germany, UK, USA
+    Language: English, German, Russian
+    Plot: A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.
+    Actors: Adrien Brody, Emilia Fox, Michal Zebrowski, Ed StoppardArtist: Portugal. The Man
+    Name: Feel It Still - Gryffin Remix
+    Link: https://open.spotify.com/track/4yeWP0EabOteKT2MzPyeJ8
+    Album: Feel It Still (Gryffin Remix)
+    Artist: Portugal. The Man
+    Name: Feel It Still
+    Link: https://open.spotify.com/track/6QgjcU0zLnzq5OrUoSZ3OK
+    Album: Woodstock
+    Artist: Portugal. The Man
+    Name: Feel It Still - ZHU Remix
+    Link: https://open.spotify.com/track/2Nv52rWLPoRebtWMQ362w6
+    Album: Feel It Still (ZHU Remix)
+    Can't wait to marry @Lindsay80219 !Who wants to hire a driven, personable junior javascript developer?I haven't tweeted 20 times in my entire life!I'm suppose to have at least 20 tweets for this project!?Working hard on this Web Dev Bootcamp...can't wait to try out my skills in a real job.  #javascript #webdev #BootcampUpcoming shows: Freddy Rule, Excision, Tycho/PhantogramDisappointing winter so far #prayforsnow #globalwarmingI HAVE THE BEST NEIGHBORHOOD PARK!!!#numberone #denver #rubyhill #mtb #terrainpark #300daysofsun #hashtag https://t.co/HfETKvvMWy

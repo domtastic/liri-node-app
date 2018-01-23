@@ -3,21 +3,10 @@ let command = arrUserInput[2];
 const fs = require("fs");
 const twitter = require("twitter");
 const keys = require("./keys.js");
+console.log("Keys:", keys);
 var request = require("request");
-console.log(keys);
 var Spotify = require("node-spotify-api");
-let movieName = "";
-
-if (command === "my-tweets") {
-  getTwitter();
-} else if (command === "spotify-this-song") {
-  getSpotify();
-} else if (command === "movie-this") {
-  // __________ MOVIE _________________
-  getMovies();
-} else if (command === "do-what-it-says") {
-  // __________ do-what-it-says _________________
-}
+let userTitle = "";
 
 function getTwitter() {
   // ____ TWITTER TWEETS_______
@@ -38,29 +27,31 @@ function getTwitter() {
         console.log(tweets[i].user.name);
         fs.appendFile("log.txt", tweets[i].text, err => {
           if (err) throw err;
-          console.log("The tweets have been saved!");
         });
+        console.log("The tweets have been saved!");
       }
     } else {
-      console.log(err);
+      console.log(error);
     }
   });
 }
 
-function getSpotify() {
+function getUserTitle() {
+  for (let i = 3; i < arrUserInput.length; i++) {
+    if (userTitle === "") {
+      userTitle += arrUserInput[i];
+    } else {
+      userTitle += " " + arrUserInput[i];
+    }
+  }
+}
+
+function getSpotify(songName) {
   // __________ SPOTIFY _________________
   // take the User input array and create a string from everything after the 2nd index
   const spotify = new Spotify(keys.spotify);
-  var userSong = "";
-  for (let i = 3; i < arrUserInput.length; i++) {
-    if (userSong === "") {
-      userSong += arrUserInput[i];
-    } else {
-      userSong += " " + arrUserInput[i];
-    }
-  }
-  console.log("userSong: " + userSong);
-  spotify.search({ type: "track", query: userSong }, (err, data) => {
+  console.log("userSong: " + songName);
+  spotify.search({ type: "track", query: songName }, (err, data) => {
     if (err) {
       return console.log("Error occurred: " + err);
     } else {
@@ -74,7 +65,7 @@ function getSpotify() {
         console.log(output);
         fs.appendFile("log.txt", output, err => {
           if (err) throw err;
-          console.log("The tweets have been saved!");
+          console.log("The song has been saved!");
         });
         // console.log("Artist: " + data.tracks.items[i].artists[0].name);
         // console.log("Name: " + data.tracks.items[i].name);
@@ -87,36 +78,61 @@ function getSpotify() {
 
 function getMovies() {
   if (arrUserInput.length == 3) {
-    movieName = "Mr. Nobody";
-    omdbInfo();
+    omdbInfo("Mr. Nobody");
   } else {
-    for (let i = 3; i < arrUserInput.length; i++) {
-      if (movieName === "") {
-        movieName += arrUserInput[i];
-      } else {
-        movieName += " " + arrUserInput[i];
-      }
-    }
-    omdbInfo();
+    getUserTitle();
+    omdbInfo(userTitle);
   }
 }
 
-function omdbInfo() {
-  var queryUrl =
-    "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+function omdbInfo(movieName) {
+  var queryUrl = `http://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`;
   request(queryUrl, (error, response, body) => {
     console.log("========================");
-    // console.log("Body:", body); // Print the HTML for the Google homepage.
-    console.log(`Title: ${JSON.parse(body).Title}`);
-    console.log(`Year: ${JSON.parse(body).Year}`);
-    console.log(`IMDB Rating: ${JSON.parse(body).imdbRating}`);
-    // how do you do this again?
-    // console.log(
-    //   "Rotten Tomatoes: " + JSON.parse(body).Ratings.Source["Rotten Tomatoes"]
-    // );
-    console.log(`Country: ${JSON.parse(body).Country}`);
-    console.log(`Language: ${JSON.parse(body).Language}`);
-    console.log(`Plot: ${JSON.parse(body).Plot}`);
-    console.log(`Actors: ${JSON.parse(body).Actors}`);
+    console.log("Body:", body); // Print the HTML for the Google homepage.
+    let info = JSON.parse(body);
+    let rottenRatings = "";
+    info.Ratings.forEach((element, i) => {
+      if (info.Ratings[i].Source === "Rotten Tomatoes") {
+        rottenRatings = info.Ratings[i].Value;
+      }
+    });
+    let output = `Title: ${info.Title}
+    Year: ${info.Year}
+    IMDB Rating: ${info.imdbRating}
+    Rotten Tomatoes: ${rottenRatings}
+    Country: ${info.Country}
+    Language: ${info.Language}
+    Plot: ${info.Plot}
+    Actors: ${info.Actors}`;
+
+    console.log(output);
+    fs.appendFile("log.txt", output, err => {
+      if (err) throw err;
+      console.log("The movie has been saved!");
+    });
   });
+}
+
+function getRandomText() {
+  fs.readFile("random.txt", "utf8", function(error, data) {
+    if (error) {
+      return console.log(error);
+    }
+    console.log("Data: ", data);
+    getSpotify(data);
+  });
+}
+
+if (command === "my-tweets") {
+  getTwitter();
+} else if (command === "spotify-this-song") {
+  getUserTitle();
+  getSpotify(userTitle);
+} else if (command === "movie-this") {
+  // __________ MOVIE _________________
+  getMovies();
+} else if (command === "do-what-it-says") {
+  // __________ do-what-it-says _________________
+  getRandomText();
 }
